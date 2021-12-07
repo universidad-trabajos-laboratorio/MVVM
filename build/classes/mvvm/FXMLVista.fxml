@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="275.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mvvm.Vista">
+   <children>
+      <TextField fx:id="ta" layoutX="105.0" layoutY="58.0" prefHeight="25.0" prefWidth="173.0" />
+      <TextField fx:id="tb" layoutX="105.0" layoutY="95.0" prefHeight="25.0" prefWidth="173.0" />
+      <Button layoutX="105.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleCalcular" text="Calcular" />
+      <TextField fx:id="tsalida" layoutX="105.0" layoutY="216.0" prefHeight="25.0" prefWidth="173.0" />
+      <Label layoutX="22.0" layoutY="62.0" prefHeight="17.0" prefWidth="58.0" text="Ingrese A:" />
+      <Label layoutX="22.0" layoutY="99.0" prefHeight="17.0" prefWidth="58.0" text="Ingrese B:" />
+      <Label layoutX="17.0" layoutY="220.0" prefHeight="17.0" prefWidth="68.0" text="El resultado es:" />
+      <Label layoutX="22.0" layoutY="14.0" prefHeight="30.0" prefWidth="263.0" text="SUMA DE DOS NUMEROS">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comb" layoutX="105.0" layoutY="137.0" prefHeight="26.0" prefWidth="167.0" promptText="OPERACION" onAction="#handleSelect"/>
+   </children>
+</AnchorPane>
